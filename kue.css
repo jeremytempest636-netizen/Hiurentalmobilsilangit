@@ -1,0 +1,335 @@
+/* ============================= */
+/* GLOBAL */
+body{
+  margin:0;
+  font-family:'Poppins', sans-serif;
+  background:linear-gradient(180deg,#eef4ff,#dbe9ff);
+}
+
+/* ============================= */
+/* NAVBAR */
+.navbar{
+  position:sticky;
+  top:0;
+  background:#0a1f44;
+  color:white;
+  padding:15px 40px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+  z-index:1000;
+}
+
+.nav-container{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.logo{
+  width:80px;
+  height:80px;
+  object-fit:cover;
+  border-radius:50%;
+  border:3px solid #ffd43b;
+  padding:5px;
+  background:white;
+  box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.nav-text h2{
+  margin:0;
+  font-size:18px;
+}
+
+.nav-text p{
+  margin:0;
+  font-size:12px;
+  opacity:0.8;
+}
+
+.nav-container nav{
+  display:flex;
+  gap:20px;
+  flex-wrap:wrap;
+}
+
+.nav-container nav a{
+  color:white;
+  text-decoration:none;
+  font-weight:500;
+  position:relative;
+}
+
+.nav-container nav a::after{
+  content:'';
+  position:absolute;
+  width:0%;
+  height:2px;
+  background:#ffd43b;
+  left:0;
+  bottom:-5px;
+  transition:0.3s;
+}
+
+.nav-container nav a:hover::after{
+  width:100%;
+}
+
+.btn-nav{
+  background:#ffd43b;
+  padding:10px 18px;
+  border-radius:8px;
+  color:#0a1f44;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-nav:hover{
+  background:#ffcc00;
+}
+
+/* ============================= */
+/* HERO */
+.hero{
+  background:linear-gradient(120deg,#0a58ff,#003c9e);
+  color:white;
+  padding:110px 20px 90px;
+  text-align:center;
+}
+
+.hero-content{
+  max-width:750px;
+  margin:auto;
+  line-height:1.6;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:25px;
+  background:#ffd43b;
+  color:#0a1f44;
+  padding:12px 28px;
+  border-radius:8px;
+  font-weight:600;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn:hover{
+  background:#ffcc00;
+  transform:translateY(-2px);
+}
+
+/* ============================= */
+/* FITUR */
+.fitur-section{
+  margin-top:-50px;
+}
+
+.fitur{
+  display:flex;
+  gap:20px;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+.fitur-item{
+  background:white;
+  padding:25px;
+  border-radius:15px;
+  width:260px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  transition:0.3s;
+}
+
+.fitur-item:hover{
+  transform:translateY(-5px);
+}
+
+/* ============================= */
+/* CONTAINER */
+.container{
+  padding:70px 20px;
+  max-width:1100px;
+  margin:auto;
+}
+
+/* ============================= */
+/* TITLE */
+.title{
+  text-align:center;
+  color:#0a58ff;
+  margin-bottom:35px;
+  font-size:28px;
+}
+
+/* ============================= */
+/* CARD GRID */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:25px;
+}
+
+.card{
+  background:white;
+  border-radius:15px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  text-align:center;
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+}
+
+/* ============================= */
+/* BUTTON WA */
+.btn-wa{
+  background:#0a58ff;
+  color:white;
+  padding:10px 22px;
+  border-radius:8px;
+  display:inline-block;
+  margin:12px;
+  text-decoration:none;
+  transition:0.3s;
+}
+
+.btn-wa:hover{
+  background:#003ecb;
+}
+
+/* ============================= */
+/* TABLE */
+table{
+  width:100%;
+  background:white;
+  border-radius:12px;
+  overflow:hidden;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+}
+
+th{
+  background:#0a58ff;
+  color:white;
+}
+
+td,th{
+  padding:12px;
+  text-align:center;
+}
+
+tr:nth-child(even){
+  background:#f2f6ff;
+}
+
+/* ============================= */
+/* KONTAK */
+.kontak-section{
+  text-align:center;
+}
+
+.kontak-card{
+  display:flex;
+  justify-content:center;
+  gap:25px;
+  flex-wrap:wrap;
+  margin-top:20px;
+}
+
+.kontak-item{
+  background:white;
+  padding:25px 35px;
+  border-radius:15px;
+  box-shadow:0 10px 25px rgba(0,0,0,0.1);
+  min-width:220px;
+}
+
+.kontak-item h3{
+  color:#0a58ff;
+  margin-bottom:10px;
+}
+
+/* ============================= */
+/* MAP */
+iframe{
+  width:100%;
+  height:320px;
+  border:none;
+  border-radius:15px;
+}
+
+/* ============================= */
+/* WA FLOAT */
+.wa{
+  position:fixed;
+  bottom:20px;
+  right:20px;
+  background:#25d366;
+  padding:15px;
+  border-radius:50%;
+  color:white;
+  font-size:20px;
+  box-shadow:0 5px 15px rgba(0,0,0,0.3);
+}
+
+/* ============================= */
+/* FOOTER */
+footer{
+  background:#0a1f44;
+  color:white;
+  text-align:center;
+  padding:25px;
+  margin-top:40px;
+}
+
+/* ============================= */
+/* MEDIA QUERY MOBILE */
+@media (max-width:768px){
+  .nav-container{
+    flex-direction:column;
+    gap:10px;
+  }
+
+  .nav-container nav{
+    flex-direction:column;
+    gap:10px;
+    width:100%;
+    text-align:center;
+  }
+
+  .hero{
+    padding:80px 15px 60px;
+  }
+
+  .fitur{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  .grid{
+    grid-template-columns:1fr;
+  }
+
+  .kontak-card{
+    flex-direction:column;
+    gap:15px;
+  }
+}
+
+/* ============================= */
+/* IMAGE & IFRAME RESPONSIVE */
+img, iframe{
+  max-width:100%;
+  height:auto;
+}
