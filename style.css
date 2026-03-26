@@ -226,21 +226,6 @@ tr:nth-child(even){
 background:#f2f6ff;
 }
 
-.container {
-    padding: 40px 20px;
-}
-
-.container h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.container p {
-    text-align: center;
-    max-width: 700px;
-    margin: auto;
-}
-
 /* KONTAK */
 .kontak-section{
 text-align:center;
